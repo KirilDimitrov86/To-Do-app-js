@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>TO DO</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <h1>To Do list</h1>
+    <input type="text" placeholder="What to do?" />
+    <button id="add-to-do-btn">Add</button>
+    <select id="chose-mode">
+      <option id="local-to-dos" value="local">LOCAL</option>
+      <option id="remote-to-dos" value="remote">REMOTE</option>
+    </select>
+    <div id="to-do-container">
+      <div class="to-do-in-progres">
+        <h3>Inprogres</h3>
+        <div id="to-do-in-progres"></div>
+      </div>
+      <div class="to-do-completed">
+        <h3>Completed</h3>
+        <div id="to-do-completed"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
