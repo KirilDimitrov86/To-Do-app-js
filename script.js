@@ -2,15 +2,11 @@ const addToDoBtn = document.getElementById("add-to-do-btn");
 const toDoInput = document.getElementsByTagName("input")[0];
 const toDoInProgres = document.querySelector("#to-do-in-progres");
 const toDoCompleted = document.querySelector("#to-do-completed");
-const localToDosOption = document.getElementById("local-to-dos");
-const remoteToDosOption = document.getElementById("remote-to-dos");
 const selectToDoMode = document.getElementById("chose-mode");
 
 let localToDos = [];
 let remoteToDos = [];
 let workToDos = [];
-
-// check selectionMode
 
 function addToDo() {
   const validText = toDoInput.value.trim();
