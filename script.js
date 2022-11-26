@@ -20,12 +20,11 @@ function addToDo() {
       completed: false,
     };
     localToDos.push(newToDoObj);
-    workToDos = [...localToDos];
+    if (selectToDoMode.value === "local") {
+      workToDos = [...localToDos];
+    }
     renderToDos();
     toDoInput.value = "";
-//     if(selectToDoMode.value === !("local")){
-// selectToDoMode = localToDosOption;
-//     }
   } else {
     alert("Please type in some text");
   }
